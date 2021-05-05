@@ -19,7 +19,7 @@ function validationErrorMiddleware(error, request, response, next) {
 	response.status(400).json({
 		errors: error.validationErrors,
 	});
-
+  console.log("Error en la validación del esquema");
 	next();
 }
 
