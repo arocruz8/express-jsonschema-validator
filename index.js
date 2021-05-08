@@ -24,31 +24,46 @@ function validationErrorMiddleware(error, request, response, next) {
 }
 
 const userSchema = {
-    "type": "object",
-    "properties": {
-      "name": {
-        "type": "string"
+  "type": "object",
+  "properties": {
+      "idProducto": {
+          "$id": "#/properties/idProducto",
+          "type": "integer"
       },
-      "idUser": {
-        "type": "integer"
+      "categoriaProducto": {
+          "$id": "#/properties/categoriaProducto",
+          "type": "string"
       },
-      "email": {
-        "type": "string"
+      "nombreProducto": {
+          "$id": "#/properties/nombreProducto",
+          "type": "string"
       },
-      "phone": {
-        "type": "integer"
+      "cantidad": {
+          "$id": "#/properties/cantidad",
+          "type": "integer"
       },
-      "password": {
-        "type": "string"
+      "precio": {
+          "$id": "#/properties/precio",
+          "type": "integer"
+      },
+      "descripcion": {
+          "$id": "#/properties/descripcion",
+          "type": "string"
+      },
+      "foto": {
+          "$id": "#/properties/foto",
+          "type": "string"
       }
-    },
-    "required": [
-      "name",
-      "idUser",
-      "email",
-      "phone",
-      "password"
-    ]
+  },
+  "required": [
+      "idProducto",
+      "categoriaProducto",
+      "nombreProducto",
+      "cantidad",
+      "precio",
+      "descripcion",
+      "foto"
+  ]
 };
 
 const app = express();

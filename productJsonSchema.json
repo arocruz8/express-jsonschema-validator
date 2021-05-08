@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "idProducto": {
+            "$id": "#/properties/idProducto",
+            "type": "integer"
+        },
+        "categoriaProducto": {
+            "$id": "#/properties/categoriaProducto",
+            "type": "string"
+        },
+        "nombreProducto": {
+            "$id": "#/properties/nombreProducto",
+            "type": "string"
+        },
+        "cantidad": {
+            "$id": "#/properties/cantidad",
+            "type": "integer"
+        },
+        "precio": {
+            "$id": "#/properties/precio",
+            "type": "integer"
+        },
+        "descripcion": {
+            "$id": "#/properties/descripcion",
+            "type": "string"
+        },
+        "foto": {
+            "$id": "#/properties/foto",
+            "type": "string"
+        }
+    },
+    "required": [
+        "idProducto",
+        "categoriaProducto",
+        "nombreProducto",
+        "cantidad",
+        "precio",
+        "descripcion",
+        "foto"
+    ]
+}

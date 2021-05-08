@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "properties": {
+        "idOrden": {
+            "$id": "#/properties/idOrden",
+            "type": "integer"
+        },
+        "idCliente": {
+            "$id": "#/properties/idCliente",
+            "type": "integer"
+        },
+        "cliente": {
+            "$id": "#/properties/cliente",
+            "type": "string"
+        },
+        "precioTotal": {
+            "$id": "#/properties/precioTotal",
+            "type": "number"
+        },
+        "direccionEntrega": {
+            "$id": "#/properties/direccionEntrega",
+            "type": "string"
+        },
+        "productosOrden": {
+            "$id": "#/properties/productosOrden",
+            "type": "array"
+        },
+        "metodoPago": {
+            "$id": "#/properties/metodoPago",
+            "type": "string"
+        }
+    },
+        "required": [
+            "idOrden",
+            "idCliente",
+            "cliente",
+            "precioTotal",
+            "direccionEntrega",
+            "productosOrden",
+            "metodoPago"
+        ]
+    }
